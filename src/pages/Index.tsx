@@ -121,7 +121,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              О преподавателе 👨‍🏫
+              Максимов Максим 👨‍🏫
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Опытный педагог с международной практикой и глубоким пониманием детской психологии
@@ -494,17 +494,23 @@ const Index = () => {
           <div className="mt-12 text-center space-y-4">
             <p className="text-muted-foreground">Или свяжитесь со мной напрямую:</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button variant="outline" size="lg" className="gap-2">
-                <Icon name="Mail" size={20} />
-                Email
+              <Button variant="outline" size="lg" className="gap-2" asChild>
+                <a href="tel:+79065729991">
+                  <Icon name="Phone" size={20} />
+                  +7 (906) 572-99-91
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="gap-2">
-                <Icon name="MessageCircle" size={20} />
-                Telegram
+              <Button variant="outline" size="lg" className="gap-2" asChild>
+                <a href="https://t.me/MaximovMaksim" target="_blank" rel="noopener noreferrer">
+                  <Icon name="MessageCircle" size={20} />
+                  Telegram
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="gap-2">
-                <Icon name="Phone" size={20} />
-                WhatsApp
+              <Button variant="outline" size="lg" className="gap-2" asChild>
+                <a href="https://wa.me/79065729991" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Phone" size={20} />
+                  WhatsApp
+                </a>
               </Button>
             </div>
           </div>
